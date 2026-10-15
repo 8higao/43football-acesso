@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#071610">
+  <meta name="description" content="O endereço de entrada do 43Football. Todo jogo conta!">
+  <meta name="referrer" content="no-referrer">
+  <title>43Football — Entrar no jogo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="config.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="entry">
+    <h1 class="sr-only">43Football — Todo jogo conta!</h1>
+    <div class="art"><img src="logo.png" width="1254" height="1254" alt="43Football. Todo jogo conta!" fetchpriority="high"></div>
+    <section class="access" aria-label="Acesso ao jogo">
+      <p class="state" id="state"><span class="dot" aria-hidden="true"></span><span id="status-text">Conferindo acesso</span></p>
+      <p class="message" id="message" role="status">Aguarde um instante.</p>
+      <a class="play disabled" id="play" aria-disabled="true"><span id="play-label">JOGAR</span><span aria-hidden="true">↗</span></a>
+      <p class="hint">No celular, use a tela na horizontal para jogar.</p>
+    </section>
+    <noscript><p class="fallback">Ative o JavaScript do navegador para carregar o acesso ao jogo.</p></noscript>
+  </main>
+</body>
+</html>
