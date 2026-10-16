@@ -8,8 +8,7 @@
   <meta name="referrer" content="no-referrer">
   <title>43Football — Entrar no jogo</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="config.js" defer></script>
-  <script src="app.js" defer></script>
+  <script src="app.js?v=availability-1" defer></script>
 </head>
 <body>
   <main class="entry">
@@ -19,6 +18,7 @@
       <p class="state" id="state"><span class="dot" aria-hidden="true"></span><span id="status-text">Conferindo acesso</span></p>
       <p class="message" id="message" role="status">Aguarde um instante.</p>
       <a class="play disabled" id="play" aria-disabled="true"><span id="play-label">JOGAR</span><span aria-hidden="true">↗</span></a>
+      <button id="retry" class="retry" type="button" hidden>Verificar novamente</button>
       <p class="hint"><strong>Horário previsto do servidor</strong><br>Das 7h à meia-noite · Horário de Brasília</p>
       <p class="hint">No celular, use a tela na horizontal para jogar.</p>
     </section>
