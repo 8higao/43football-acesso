@@ -67,6 +67,8 @@
   play.addEventListener('click', event => { if (play.getAttribute('aria-disabled') === 'true') event.preventDefault(); });
   retry.addEventListener('click', () => void check());
   document.addEventListener('visibilitychange', () => { if (document.hidden) invalidate(); else void check(); });
+  window.addEventListener('pagehide', invalidate);
+  window.addEventListener('pageshow', event => { if (event.persisted) void check(); });
   window.addEventListener('online', () => void check());
   window.addEventListener('offline', () => { invalidate(); render('unavailable', 'Sem conexão com o jogo', 'Confira sua conexão com a internet e tente novamente.'); });
   setInterval(() => { if (document.body.dataset.mode !== 'online') void check(); }, 30000);
